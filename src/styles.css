@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* Ensure there's no margin or padding in the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", "Courier", "Monospace";
+ 
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+/* Content section that will scroll */
+.content {
+  padding-top: 60px; /* This ensures content doesn't hide under the header */
+  overflow-y: auto;  /* Allow vertical scrolling if needed */
+  height: 100vh;     /* Make sure content area fills the height of the viewport */
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1; 
+  
+}
+
+/* Fixed header styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F2E9DA; /* Header background color */
+  color: #F2E9DA;
+  text-align: center;
+  z-index: 1000; /* Ensure the header stays on top */
+  box-sizing: border-box;
+
+}
+
+  .button-build {background-color: #A50050; 
+    color: white;             
+    border: none;              
+    padding: 10px 20px;      
+    text-align: center;      
+    text-decoration: none;   
+    display: inline-block;    
+    font-size: 16px;         
+    cursor: pointer;       
+    border-radius: 5px;        
+    transition: background-color 0.3s ease; 
+    width: 380px;    /* Fixed width */
+    height: 40px;    /* Fixed height */
+    font-family: "Courier Prime", "Courier", "Monospace";
+
+  }
+
+  .section-rst{
+   font-family: "Courier Prime", "Courier", "Monospace";
+  }
+  .button-build:hover {
+    background-color: #F2E9DA;
+    color: #A50050; 
+
+  
+}
+  body {
+    font-family: "Courier Prime", "Courier", "Monospace";
+    background-color: #F2E9DA;
+    color: #333;
+
+   font-weight: 600;
+   line-height: 1.625rem;
+   padding-bottom: 0.5rem;
+   height: 1500px;
+  }
+.body-rst{
+    background-color: #F2E9DA;
+    
+}
+/* Styles généraux du menu */
+
+   
+.logo {
+    width: 150px ; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    font-family: "Courier Prime", "Courier", "Monospace";
+}
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .navbar {
+    background-color: #F2E9DA;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    padding: 10px 0;
+  }
+  
+  .navbar-links li a {
+    font-family: "Courier Prime", "Courier", "Monospace";
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.5rem;
+        letter-spacing: 0;
+        
+  }
+  
+  .navbar-links li a:hover {
+    color: black;
+  }
+  /* styles.css */
+
+/* Base styles for the buttons */
+.choose-menu-btn {
+    background-color: #F2E9DA; /* semi-transparent background */
+    color: darkslategray;                          /* White text */
+    font-size: 1rem;                       /* Font size */
+    padding: 0.75rem 1.5rem;               /* Padding inside the buttons */
+    border-radius: 0.5rem;                 /* Rounded corners */
+    border: none;                          /* No border */
+    cursor: pointer;                       /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    margin: 0.5rem;                        /* Margin between buttons */
+    font-weight: bold;                     /* Bold text */
+  }
+  
+  /* Active button (when the 'active' class is added) */
+  .choose-menu-btn.active {
+    background-color: #F2E9DA;             /* Red background for active button */
+  }
+  
+  /* Hover effect: when the user hovers over a button */
+  .choose-menu-btn:hover {
+    background-color: #F2E9DA;  /* Darker background on hover */
+    transform: scale(1.05);                 /* Slightly enlarge the button on hover */
+  }
+  
+  /* Optional: Focus effect (for accessibility) */
+  .choose-menu-btn:focus {
+    outline: none;                         /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.5); /* Custom focus outline (light red) */
+  }
+  footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+ /* Custom styles for the buttons */
+.choose-menu-btn {
+  background-color: #1a202c; /* Dark background for buttons */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Add padding */
+  font-size: 1.125rem; /* Font size */
+  border-radius: 0.5rem; /* Rounded corners */
+  font-weight: bold;
+  transition: all 0.3s ease; /* Smooth transition for hover and focus states */
+  cursor: pointer;
+}
+
+/* Active button styling */
+.choose-menu-btn.active {
+  background-color: #A50050; /* Green background for active button */
+  color: white;
+  transform: scale(1.05); /* Slightly scale up the active button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect for active button */
+}
+
+/* Hover state for all buttons */
+.choose-menu-btn:hover {
+  background-color: #F2E9DA; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly scale the button on hover */
+  color: #A50050;
+}
+
+
